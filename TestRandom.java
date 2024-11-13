@@ -2,8 +2,9 @@
 public  class  TestRandom {
 	public static void main(String[]  args) {
 	    int numOfTests = Integer.parseInt(args[0]);
-		int countOverHalf = 0, countUnderHalf = 0;
-		
+		// must assign a value to them as we use them later on
+		int countOverHalf = 0, countUnderHalf = 0; 
+		// loop to generate random numbers for uniform check
 		for (int i = 0; i < numOfTests; i++) {
 			double random = Math.random();
 			if (random > 0.5) {
@@ -13,7 +14,8 @@ public  class  TestRandom {
 				countUnderHalf++;
 			}
 		}
-
+		
+		// edge case
 		if (countOverHalf == 0 || countUnderHalf == 0) {
 			System.out.println("> 0.5: " + countOverHalf + " times");
 			System.out.println("<= 0.5: " + countUnderHalf + " times");
