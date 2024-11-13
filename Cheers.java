@@ -22,7 +22,7 @@ public class Cheers {
                         }
                 }
 
-                System.out.println("What does that pell?");
+                System.out.println("What does that spell?");
 
                 // the repeating loop at the end
                 for (int i = 0; i < timesToRepeat; i++) {
