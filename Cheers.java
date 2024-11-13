@@ -7,7 +7,7 @@ public class Cheers {
                 int timesToRepeat = Integer.parseInt(args[1]);
 
                 String cheerSpecial = "Give me an ";
-                String cheerRegular = "Give me a ";
+                String cheerRegular = "Give me a  ";
 
                 // the loop for the cheer
                 // checks for the special characters and upper cases every letter
